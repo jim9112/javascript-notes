@@ -10,12 +10,14 @@
 // console.log(yetAnotherList);
 // console.log(list);
 var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+console.log(array);
 array.shift();
 console.log(array);
 array.sort()
 array.push("Kiwi");
 console.log(array);
 array.splice(0, 1);
+console.log(array);
 array.sort();
 array.reverse();
 console.log(array);
