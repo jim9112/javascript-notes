@@ -1,11 +1,20 @@
 var userAcount = {
-    userName: "Jimmy",
+    userName: "jimmy",
     password: "abc123"
 };
 var database = [{
     userName: "Jimmy",
     password: "abc123"
-}]
+},
+{
+    userName: "sally",
+    password: "1111"
+},
+{
+    userName: "joey",
+    password: "2222"
+}
+]
 
 let newsfeed = [{
     userName: "Joe",
@@ -23,8 +32,16 @@ let newsfeed = [{
 var usernamePrompt = prompt("What's your username?");
 var passwordPrompt = prompt("What's your password?");
 
+function isUserValid(user, pass){
+    for (var i=0; i < database.length; i++) {
+        if (user === database[i].userName && pass === database[i].password) {
+           return true;
+}
+    }
+return false
+}
 function signIn(user, pass) {
-    if (user === database[0].userName && pass === database[0].password) {
+ if (isUserValid(user, pass)) {
 console.log(newsfeed);
     } else {
         alert("Sorry, wrong username and/or password!!!")
