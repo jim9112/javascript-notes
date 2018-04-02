@@ -2,8 +2,8 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var li = document.querySelector("li");
-var blue = document.getElementsByClassName("delete")
-var one = document.getElementsByClassName("thing");
+var blue = document.querySelector(".delete")
+var one = document.querySelector(".thing");
 var two = document.querySelectorAll("li");
 function togleListItem() {
 li.classList.toggle("done");
